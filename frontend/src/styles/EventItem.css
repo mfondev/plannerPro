@@ -1,0 +1,50 @@
+.event {
+  max-width: 50rem;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.event img {
+  width: 30rem;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.actions a,
+.actions button {
+  padding: 0.25rem 1rem;
+  text-decoration: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+.edit{
+ color: #00e1db;;
+}
+.actions button {
+  /* background-color: transparent;
+  border: none;
+  color: var(--color-primary-800); */
+   background: #00e1db;
+  color: #1a292e;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 500px) {
+.event img {
+  width: 20rem;
+}
+}

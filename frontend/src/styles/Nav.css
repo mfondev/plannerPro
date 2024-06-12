@@ -1,0 +1,41 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+a {
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  gap: 10px;
+}
+
+.logo {
+  width: 30px;
+}
+
+.logout {
+  background: transparent;
+  color: #fff;
+  border: none;
+  font-family: 'Aeonik';
+  font-weight: 100;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.newsPage {
+  display: grid;
+  place-items: center;
+  /* margin-top: 20px; */
+}
+@media screen and (max-width: 1000px) {
+
+ .newsPage{
+  display: none;
+ }
+}

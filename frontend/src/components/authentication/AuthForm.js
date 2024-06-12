@@ -35,7 +35,7 @@ export default function AuthForm() {
           {data && data.message && <p>{data.message}</p>}
           <p>
             <label htmlFor='email'>Email address</label>
-            <div class='input-container'>
+            <div className='input-container'>
               <input
                 id='email'
                 type='email'
@@ -48,7 +48,7 @@ export default function AuthForm() {
 
           <p>
             <label htmlFor='password'>Set password</label>
-            <div class='password-container'>
+            <div className='password-container'>
               <input
                 id='password'
                 type='password'

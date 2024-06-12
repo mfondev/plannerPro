@@ -14,7 +14,6 @@ export default function EventForm({ event, method }) {
   const navigate = useNavigate()
   const navigation = useNavigation()
   const data = useActionData()
-  const isSubmitting = navigation.state === 'submitting'
 
   function cancelHandler() {
     navigate('..')
@@ -76,12 +75,10 @@ export default function EventForm({ event, method }) {
             defaultValue={event ? event.description : ''}
           ></textarea>
         </div>
-        <button className='submit-button' onClick={cancelHandler}>
+        <button className='save-btn' onClick={cancelHandler}>
           cancel
         </button>
-        <button className='submit-button'>
-          {isSubmitting ? 'submitting...' : 'save'}
-        </button>
+        <button className='save-btn'>save</button>
       </Form>
     </>
   )
