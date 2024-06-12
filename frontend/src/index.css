@@ -1,13 +1,61 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: 'Aeonik';
+  src: url(/public/fonts/AeonikTRIAL-Regular.otf) format('opentype');
 }
 
-code {
+@font-face {
+  font-family: 'Bauhaus Bugler Bold W00 Bold';
+  src: url('https://db.onlinewebfonts.com/t/a8f1032f952b63eeefc647923900f21a.eot');
+  src: url('https://db.onlinewebfonts.com/t/a8f1032f952b63eeefc647923900f21a.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://db.onlinewebfonts.com/t/a8f1032f952b63eeefc647923900f21a.woff2')
+      format('woff2'),
+    url('https://db.onlinewebfonts.com/t/a8f1032f952b63eeefc647923900f21a.woff')
+      format('woff'),
+    url('https://db.onlinewebfonts.com/t/a8f1032f952b63eeefc647923900f21a.ttf')
+      format('truetype'),
+    url('https://db.onlinewebfonts.com/t/a8f1032f952b63eeefc647923900f21a.svg#Bauhaus Bugler Bold W00 Bold')
+      format('svg');
+}
+
+body {
+  margin: 0;
+  font-family: 'Aeonik';
+
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #09171c;
+  color: #fff;
+}
+
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.center{
+  text-align: center;
+}
+
+.highlight{
+  color: #00e1db;
 }

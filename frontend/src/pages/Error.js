@@ -1,12 +1,22 @@
 import React from 'react'
-import PageContent from '../components/PageContent'
+import PageContent from '../components/events/PageContent'
+import { useRouteError } from 'react-router-dom'
 
 export default function Error({ children }) {
-  let title = 'Something went wrong'
-  let message = 'Could not fetch page or resource'
+  const error = useRouteError()
+  let title = 'An error occurred!'
+  let message = 'Something went wrong!'
+  
+  if (error.status === 500) {
+    message = error.data.message
+  }
+    if (error.status === 404) {
+      title = 'Not found!'
+      message = 'Could not find resource or page.'
+    }
   return (
     <>
-      <PageContent title={title} message={message}>
+      <PageContent title={title} >
         {children}
       </PageContent>
     </>

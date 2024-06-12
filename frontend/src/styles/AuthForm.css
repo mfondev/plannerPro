@@ -1,0 +1,92 @@
+.authImg {
+  height: 100vh;
+  object-fit: cover;
+  width: 50%;
+}
+
+.form {
+  margin-left: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form p {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form label {
+  font-size: 18px;
+}
+
+.form input {
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: #1a292e;
+  width: 300px;
+  color: #ecf4f7;
+  margin-top: 5px;
+}
+
+.form input::placeholder {
+  color: #a7adaf;
+  font-family: 'Aeonik';
+  /* margin-left: 5px; */
+}
+
+.form input:focus {
+  border: none;
+}
+
+.proceed {
+  background: #00e1db;
+  color: #1a292e;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.input-container {
+  position: relative;
+  width: fit-content;
+}
+
+.input-container input {
+  padding-left: 32px; 
+}
+
+.input-container::before {
+  content: '\f0e0';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  position: absolute;
+  left: 10px;
+  top: 54%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.password-container {
+  position: relative;
+  width: fit-content;
+}
+
+.password-container input {
+  padding-left: 32px; 
+}
+.password-container::before {
+  content: '\f023';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  position: absolute;
+  left: 10px;
+  top: 54%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
