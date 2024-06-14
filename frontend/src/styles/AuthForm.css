@@ -3,7 +3,11 @@
   object-fit: cover;
   width: 50%;
 }
-
+.fle{
+  display: grid;
+  place-items: center;
+  width: 100%;
+}
 .form {
   margin-left: 80px;
   display: flex;
@@ -11,7 +15,7 @@
   gap: 20px;
 }
 
-.form p {
+.form .form-detail{
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -27,7 +31,7 @@
   border-radius: 10px;
   border: none;
   background: #1a292e;
-  width: 300px;
+  width: 100%;
   color: #ecf4f7;
   margin-top: 5px;
 }
@@ -54,11 +58,11 @@
 
 .input-container {
   position: relative;
-  width: fit-content;
+  /* width: fit-content; */
 }
 
 .input-container input {
-  padding-left: 32px; 
+  padding-left: 32px;
 }
 
 .input-container::before {
@@ -74,11 +78,11 @@
 
 .password-container {
   position: relative;
-  width: fit-content;
+  /* width: fit-content; */
 }
 
 .password-container input {
-  padding-left: 32px; 
+  padding-left: 32px;
 }
 .password-container::before {
   content: '\f023';
@@ -92,13 +96,12 @@
 }
 
 @media screen and (max-width: 1000px) {
-
-  .authImg{
+  .authImg {
     display: none;
   }
   .form {
-  margin-left: 0px;
-  justify-content: center;
-  gap: 20px;
-}
+    margin-left: 0px;
+    justify-content: center;
+    gap: 20px;
+  }
 }

@@ -8,9 +8,7 @@ import {
 } from 'react-router-dom'
 import authImage from '../../../src/image/authImg.png'
 import '../../styles/AuthForm.css'
-import { TextField, InputAdornment } from '@mui/material'
-import { MailOutlineRoundedIcon } from '@mui/icons-material/MailOutlineRounded'
-import EmailIcon from '@mui/icons-material/Email'
+
 
 export default function AuthForm() {
   const data = useActionData()
@@ -33,7 +31,7 @@ export default function AuthForm() {
             </ul>
           )}
           {data && data.message && <p>{data.message}</p>}
-          <p>
+          <div className='form-detail'>
             <label htmlFor='email'>Email address</label>
             <div className='input-container'>
               <input
@@ -44,9 +42,9 @@ export default function AuthForm() {
                 placeholder='Enter email'
               />
             </div>
-          </p>
+          </div>
 
-          <p>
+          <div className='form-detail'>
             <label htmlFor='password'>Set password</label>
             <div className='password-container'>
               <input
@@ -57,11 +55,11 @@ export default function AuthForm() {
                 placeholder='Enter password'
               />
             </div>
-          </p>
+          </div>
           <button disabled={isSubmitting} className='proceed'>
             {isSubmitting ? 'submitting...' : 'Proceed'}
           </button>
-          <p className='center'>
+          <p className='center text'>
             By signing up, you agree to our{' '}
             <span className='highlight'>Terms of service</span>
           </p>
